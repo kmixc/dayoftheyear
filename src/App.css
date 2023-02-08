@@ -41,10 +41,18 @@ body {
   color: #fff;
 }
 
-.copyright {
+.bottom {
   position: absolute;
   bottom: 0;
   padding: 15px;
+  text-align: center;
+}
+
+#time {
+  color: rgb(68, 68, 68);
+}
+
+.copyright {
   color: #383838;
 }
 

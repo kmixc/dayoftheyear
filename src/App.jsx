@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Logo from './assets/365days.svg'
 import './App.css'
+import moment from 'moment';
 
 function App() {
 
@@ -12,6 +13,12 @@ function App() {
   var dayBefore = day - 1;
   var dayAhead = day + 1;
 
+  var update = function () {
+    document.getElementById("time")
+      .innerHTML = moment().format('HH:mm:ss');
+  }
+  setInterval(update, 1000);
+
   return (
     <div className='center'>
       <img src={Logo} className="logo" />
@@ -20,7 +27,10 @@ function App() {
         <h1 className='today'>{day.toString()}</h1>
         <h1 className='tomorrow'>{dayAhead.toString()}</h1>
       </div>
-      <p className='copyright'>kmixc visuals ©</p>
+      <div className='bottom'>
+        <p id='time'></p>
+        <p className='copyright'>kmixc visuals ©</p>
+      </div>
     </div>
   )
 }
