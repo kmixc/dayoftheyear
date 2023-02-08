@@ -121,7 +121,7 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/oliver-kmiec-5b601b1b0/
-[product-screenshot]: assets/screenshot.png
+[product-screenshot]: https://github.com/kmixc/dayoftheyear/blob/master/src/assets/screenshot.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [Vite.js]: https://img.shields.io/badge/vite.js-35495E?style=for-the-badge&logo=vite&logoColor=white
