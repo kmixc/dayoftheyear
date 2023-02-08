@@ -20,7 +20,7 @@ function App() {
         <h1 className='today'>{day.toString()}</h1>
         <h1 className='tomorrow'>{dayAhead.toString()}</h1>
       </div>
-      <p className='copyright'>kmixc visuals©</p>
+      <p className='copyright'>kmixc visuals ©</p>
     </div>
   )
 }
