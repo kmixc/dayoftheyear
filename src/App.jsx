@@ -13,6 +13,8 @@ function App() {
   var dayBefore = day - 1;
   var dayAhead = day + 1;
 
+  var half = day / 2;
+
   var update = function () {
     document.getElementById("time")
       .innerHTML = moment().format('HH:mm:ss');
@@ -27,6 +29,7 @@ function App() {
         <h1 className='today'>{day.toString()}</h1>
         <h1 className='tomorrow'>{dayAhead.toString()}</h1>
       </div>
+      <div className='divided'>{half.toString()}</div>
       <div className='bottom'>
         <p id='time'></p>
         <p className='copyright'>kmixc visuals ©</p>
