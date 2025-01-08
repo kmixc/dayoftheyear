@@ -32,7 +32,7 @@ function App() {
   return (
     <div className='center'>
       <div className='top'>
-        <div className='daysinyearleft'>{days_of_a_year(yearNum) + " / " + (days_of_a_year(yearNum) - day).toString()}</div>
+        <div className='daysinyearleft'>{days_of_a_year(yearNum) + " / " + (days_of_a_year(yearNum) - day).toString() + "DAYS LEFT"}</div>
         <img src={Logo} className="logo" />
       </div>
       <div className='days'>
