@@ -12,8 +12,16 @@ function App() {
   var day = Math.floor(diff / oneDay);
   var dayBefore = day - 1;
   var dayAhead = day + 1;
+  var yearNum = now.getYear() + 1900;
 
   var half = day / 2;
+
+  function isLeapYear(year) {
+    return year % 400 === 0 || (year % 100 !== 0 && year % 4 === 0);
+  }
+  function days_of_a_year(year) {
+    return isLeapYear(year) ? 366 : 365;
+  }
 
   var update = function () {
     document.getElementById("time")
@@ -23,7 +31,10 @@ function App() {
 
   return (
     <div className='center'>
-      <img src={Logo} className="logo" />
+      <div className='top'>
+        <div className='daysinyearleft'>{days_of_a_year(yearNum) + " / " + (days_of_a_year(yearNum) - day).toString()}</div>
+        <img src={Logo} className="logo" />
+      </div>
       <div className='days'>
         <h1 className='yesterday'>{dayBefore.toString()}</h1>
         <h1 className='today'>{day.toString()}</h1>
