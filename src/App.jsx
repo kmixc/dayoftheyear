@@ -32,8 +32,8 @@ function App() {
   return (
     <div className='center'>
       <div className='top'>
-        <div className='daysinyearleft'>{days_of_a_year(yearNum) + " / " + (days_of_a_year(yearNum) - day).toString() + "DAYS LEFT"}</div>
-        <img src={Logo} className="logo" />
+        <div className='daysinyearleft'>{days_of_a_year(yearNum) + " / " + (days_of_a_year(yearNum) - day).toString()}</div>
+        <p className='smltxt'>DAYS LEFT</p>
       </div>
       <div className='days'>
         <h1 className='yesterday'>{dayBefore.toString()}</h1>
@@ -42,6 +42,7 @@ function App() {
       </div>
       <div className='divided'>{half.toString()}</div>
       <div className='bottom'>
+        <img src={Logo} className="logo" />
         <p id='time'></p>
         <p className='copyright'>kmixc visuals ©</p>
       </div>

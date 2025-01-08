@@ -10,7 +10,6 @@ body {
 .logo {
   z-index: -5;
   width: 60px;
-  padding: 15px;
 }
 
 .center {
@@ -76,6 +75,10 @@ body {
 
 .copyright {
   color: #383838;
+}
+
+.smltxt {
+  color: #414141;
 }
 
 .tomorrow {
